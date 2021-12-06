@@ -1,8 +1,8 @@
 package view;
 
-public interface ConversionAreaObserver {
+public interface ConversionAreaObserver{
 	
-	public void update(int n);
+	public void update(double n);
 
 	
 }
