@@ -27,17 +27,4 @@ public class MenuBar extends JMenuBar{
 			return menuItem;
 		}
 
-
-    }
-
-
-
-//public MenuBar(){
-//    MenuBarListener menuBarListener = new MenuBarListener();
-//    JMenuItem saveInput = new JemnuItem(" Saveinputcentimeters");
-//
-//    saveInput.addActionListener(menuBarListener);
-//    JMenu updateModel =  new JMenu("Update model" , false);
-//    updateModel.add(saveIinput);
-//    this.add(updateModel);
-//   }
+	}

@@ -17,7 +17,7 @@ public class FeetConversionArea extends JTextArea implements ConversionAreaObser
         setRows(15);
         setText("0ft");
 		this.valueToConvert = valueToConvert;
-//		valueToConvert.register(this);
+		valueToConvert.register(this);
 	}
 	
 	@Override

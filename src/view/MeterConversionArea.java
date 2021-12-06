@@ -17,7 +17,7 @@ public class MeterConversionArea extends JTextArea implements ConversionAreaObse
         setRows(15);
         setText("0m");
 		this.valueToConvert = valueToConvert;
-//		valueToConvert.register(this);
+		valueToConvert.register(this);
 	}
 	@Override
 	public void update(double n) {
