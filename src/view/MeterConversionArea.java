@@ -6,26 +6,24 @@ import javax.swing.JTextArea;
 
 import model.Subject;
 
-public class FeetConversionArea extends JTextArea implements ConversionAreaObserver{
+public class MeterConversionArea extends JTextArea implements ConversionAreaObserver {
 	
 	double n = 0;
 	private Subject valueToConvert;
 	
-	public FeetConversionArea(Subject valueToConvert) {
-        setBackground(Color.green);
+	public MeterConversionArea(Subject valueToConvert) {
+        setBackground(Color.orange);
         setColumns(20);
         setRows(15);
-        setText("0ft");
+        setText("0m");
 		this.valueToConvert = valueToConvert;
 		valueToConvert.register(this);
 	}
-	
 	@Override
 	public void update(double n) {
-		
-		this.n = n/30.48;
+
+		this.n = n/100;
 		this.setText(Double.toString(this.n));
-		
 	}
 
 }
