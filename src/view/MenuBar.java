@@ -14,9 +14,9 @@ public class MenuBar extends JMenuBar{
 		public MenuBar(ActionListener menubarListener) {
 			
 			super();
-			JMenu gameMenu = new JMenu("Update Model");
-			gameMenu.add(createMenuItem("Save input centimeters", KeyEvent.VK_N, menubarListener));
-			super.add(gameMenu);
+			JMenu menu = new JMenu("Update Model");
+			menu.add(createMenuItem("Save input centimeters", KeyEvent.VK_N, menubarListener));
+			super.add(menu);
 			
 		}
 		

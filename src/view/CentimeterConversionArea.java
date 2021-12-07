@@ -9,19 +9,21 @@ import controller.Conversion;
 public class CentimeterConversionArea extends JTextArea{
 	
 	Conversion command;
-	int n = 0;
+	double n = 0;
 	
-	public CentimeterConversionArea(Conversion newCommand, int n) {
+	public CentimeterConversionArea(Conversion newCommand) {
         setBackground(Color.yellow);
         setColumns(20);
         setRows(15);
-        setText("0cm");
+        setText("0");
 		command = newCommand;
-		this.n = n;
+		this.n = Double.parseDouble(this.getText());
+
 		
 	}
 	
-	public void press() {
+	public void saveValue(double n) {
+		this.n = n;
 		command.execute(n);
 		
 	}

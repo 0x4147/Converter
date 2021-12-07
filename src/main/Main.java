@@ -17,15 +17,15 @@ public class Main {
 		ValueToConvert recevier = new ValueToConvert();
 		Conversion command = new Conversion(recevier);
 		
-		CentimeterConversionArea cArea = new CentimeterConversionArea(command, 5);
+		CentimeterConversionArea cArea = new CentimeterConversionArea(command);
 		FeetConversionArea feetArea = new FeetConversionArea(recevier);
 		MeterConversionArea metersArea = new MeterConversionArea(recevier);
 		
         JPanel panel = new JPanel();
         JFrame frame = new JFrame("Conversion");
 		MenuBarListener menubarListener = new MenuBarListener(cArea);
-		MenuBar gameMenuBar = new MenuBar(menubarListener);
-		frame.setJMenuBar(gameMenuBar);
+		MenuBar menuBar = new MenuBar(menubarListener);
+		frame.setJMenuBar(menuBar);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
         

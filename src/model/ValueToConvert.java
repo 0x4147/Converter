@@ -7,7 +7,7 @@ import view.ConversionAreaObserver;
 public class ValueToConvert implements Subject{
 
 	private ArrayList<ConversionAreaObserver> observers;
-	int value = 0;
+	double value = 0;
 	
 	public ValueToConvert() {
 		
@@ -31,12 +31,12 @@ public class ValueToConvert implements Subject{
 	public void notifyObserver() {
 
         for(ConversionAreaObserver observer : observers){
-        	observer.update(5);
+        	observer.update(value);
 
         }
 	}
 	
-	public void updateValue(int n) {
+	public void updateValue(double n) {
 		
 		value = n;
 		notifyObserver();

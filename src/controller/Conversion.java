@@ -12,7 +12,7 @@ public class Conversion {
 		
 	}
 	
-	public void execute(int n) {
+	public void execute(double n) {
 		
 		valueToConvert.updateValue(n);
 		
