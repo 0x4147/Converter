@@ -11,7 +11,10 @@ import view.MenuBar;
 import view.MeterConversionArea;
 
 public class Main {
-	
+	/**
+	 * This class builds the frame, the panels and the objects required to launch the application
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		ValueToConvert recevier = new ValueToConvert();

@@ -9,6 +9,11 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
 
+/**
+ * Creates a menu bar and and sets up the required features
+ * @author asanka
+ *
+ */
 public class MenuBar extends JMenuBar{
 	
 		public MenuBar(ActionListener menubarListener) {

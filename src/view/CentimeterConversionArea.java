@@ -17,14 +17,10 @@ public class CentimeterConversionArea extends JTextArea{
         setRows(15);
         setText("0");
 		command = newCommand;
-		this.n = Double.parseDouble(this.getText());
-
-		
 	}
 	
 	public void saveValue(double n) {
 		this.n = n;
 		command.execute(n);
-		
 	}
 }
